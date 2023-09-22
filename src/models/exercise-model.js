@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
-const schema = mongoose.Schema
+const Schema = mongoose.Schema
 
-const exerciseSchema = newSchema({
+const exerciseSchema = new Schema({
   username: {type: mongoose.Types.ObjectId, ref: "Users"},
   description: "string",
   duration: "number",

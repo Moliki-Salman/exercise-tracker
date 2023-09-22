@@ -1,8 +1,7 @@
 const mongoose = require("mongoose")
-const { object } = require("webidl-conversions")
-const schema = mongoose.Schema
+const Schema = mongoose.Schema
 
-const logSchema = newSchema({
+const logSchema = new Schema({
   exercise: {type: mongoose.Types.ObjectId, ref: "Exercises"},
   count: object.key(exercise).length,
 })
